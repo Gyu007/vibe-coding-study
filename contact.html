@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>연락처 | 나의 사이트</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">나의 사이트</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">홈</a></li>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="contact.html" class="active">연락처</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>연락처</h1>
+    <p>아래 양식을 채워 메시지를 남겨보세요. (현재는 실제 전송 기능은 없습니다.)</p>
+
+    <form class="contact-form">
+      <div>
+        <label for="name">이름</label><br />
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div>
+        <label for="email">이메일</label><br />
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        <label for="message">메시지</label><br />
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn">보내기</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 나의 사이트. 바이브 코딩 스터디.</p>
+  </footer>
+</body>
+</html>
