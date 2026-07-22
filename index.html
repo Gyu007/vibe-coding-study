@@ -2,49 +2,108 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>홈 | 나의 사이트</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <!-- 연습용 초보 실수 3가지를 일부러 포함했습니다:
+       1) <title> 태그 없음
+       2) 아래 <img>에 alt 속성 없음
+       3) 모바일 viewport 메타 태그 없음 -->
+  <style>
+    :root {
+      --pastel-pink: #fde2e4;
+      --pastel-peach: #fff1e6;
+      --pastel-mint: #cde7e1;
+      --pastel-lavender: #e2ece9;
+      --pastel-purple: #d6cdea;
+      --text-main: #4a4458;
+      --text-muted: #7a7488;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      background: linear-gradient(135deg, var(--pastel-pink), var(--pastel-lavender), var(--pastel-mint));
+      color: var(--text-main);
+      padding: 2rem 1rem;
+    }
+
+    .profile-card {
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 24px;
+      padding: 2.5rem 2rem;
+      max-width: 380px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 12px 30px rgba(150, 130, 180, 0.25);
+    }
+
+    .avatar {
+      border-radius: 50%;
+      background: var(--pastel-peach);
+      box-shadow: 0 6px 16px rgba(150, 130, 180, 0.3);
+    }
+
+    .name {
+      margin: 1.2rem 0 0.3rem;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .intro {
+      margin: 0 0 1.5rem;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .favorites-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+      color: var(--text-main);
+    }
+
+    .favorites {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .favorites li {
+      background: var(--pastel-purple);
+      border-radius: 12px;
+      padding: 0.6rem 1rem;
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="nav-wrap">
-      <a href="index.html" class="logo">나의 사이트</a>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">홈</a></li>
-          <li><a href="about.html">소개</a></li>
-          <li><a href="contact.html">연락처</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div class="profile-card">
+    <img
+      class="avatar"
+      width="120"
+      height="120"
+      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%23FDE2E4'/%3E%3Ccircle cx='60' cy='50' r='28' fill='%23FFF1E6'/%3E%3Ccircle cx='48' cy='48' r='4' fill='%23555'/%3E%3Ccircle cx='72' cy='48' r='4' fill='%23555'/%3E%3Cpath d='M48 66 Q60 76 72 66' stroke='%23555' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3Cpath d='M20 100 Q60 70 100 100 L100 120 L20 120 Z' fill='%23CDE7E1'/%3E%3C/svg%3E"
+    />
+    <h1 class="name">홍길동</h1>
+    <p class="intro">바이브 코딩을 배우고 있는 초보 개발자입니다 🌱</p>
 
-  <main>
-    <section class="hero">
-      <h1>안녕하세요, 반갑습니다!</h1>
-      <p>바이브 코딩 스터디 과제로 만든 간단한 HTML 사이트입니다.</p>
-      <a href="about.html" class="btn">더 알아보기</a>
-    </section>
-
-    <section class="card-grid">
-      <div class="card">
-        <h3>간단한 구조</h3>
-        <p>홈, 소개, 연락처 페이지로 구성된 다중 페이지 사이트입니다.</p>
-      </div>
-      <div class="card">
-        <h3>순수 HTML/CSS</h3>
-        <p>별도의 프레임워크나 빌드 도구 없이 바로 브라우저에서 열어볼 수 있습니다.</p>
-      </div>
-      <div class="card">
-        <h3>반응형 레이아웃</h3>
-        <p>화면 크기에 따라 자연스럽게 배치가 조정됩니다.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2026 나의 사이트. 바이브 코딩 스터디.</p>
-  </footer>
+    <h2 class="favorites-title">좋아하는 것</h2>
+    <ul class="favorites">
+      <li>☕ 커피</li>
+      <li>🐱 고양이</li>
+      <li>💻 코딩</li>
+    </ul>
+  </div>
 </body>
 </html>
