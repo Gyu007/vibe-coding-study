@@ -1,0 +1,5 @@
+{
+  "name": "page-tools",
+  "description": "vibe-coding-study 저장소의 정적 HTML 페이지를 CLAUDE.md 구조 규칙과 접근성/일관성 기준으로 점검하는 도구 모음",
+  "version": "0.1.0"
+}
