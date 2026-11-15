@@ -22,7 +22,7 @@ start index.html
 ## 오늘의 한마디
 
 <!-- QUOTE:START -->
-오늘도 한 줄의 코드가 내일의 나를 만듭니다.
+버그는 실패가 아니라 배움의 흔적입니다.
 <!-- QUOTE:END -->
 
 매일 아침 9시(한국 시간), GitHub Actions가 `quotes.txt`에서 문구를 무작위로 골라 이 구간을 자동으로 갱신합니다.
