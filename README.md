@@ -22,7 +22,7 @@ start index.html
 ## 오늘의 한마디
 
 <!-- QUOTE:START -->
-어제보다 한 걸음 더 나아간 당신을 응원합니다.
+작게 시작해도 꾸준히 커밋하면 큰 결과가 됩니다.
 <!-- QUOTE:END -->
 
 매일 아침 9시(한국 시간), GitHub Actions가 `quotes.txt`에서 문구를 무작위로 골라 이 구간을 자동으로 갱신합니다.
